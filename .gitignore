@@ -1,0 +1,77 @@
+# Build directories
+build/
+Build/
+BUILD/
+build-*/
+cmake-build-*/
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+
+# C++ compiled files
+*.o
+*.obj
+*.so
+*.dylib
+*.dll
+*.a
+*.lib
+*.exe
+
+# Documentation build artifacts
+docs/html/
+docs/latex/
+docs/xml/
+html/
+latex/
+xml/
+
+# Doxygen generated files
+Doxyfile.bak
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test results
+test_results/
+*.gcov
+*.gcda
+*.gcno
+
+# Profiling data
+*.prof
+*.profdata
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Package manager files
+conaninfo.txt
+conanbuildinfo.*
+
+# Editor backup files
+*~
+.#* 

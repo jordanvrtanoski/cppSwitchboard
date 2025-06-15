@@ -1,0 +1,14 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=${prefix}
+libdir=${exec_prefix}/@CMAKE_INSTALL_LIBDIR@
+includedir=${prefix}/@CMAKE_INSTALL_INCLUDEDIR@
+
+Name: cppSwitchboard
+Description: High-performance HTTP middleware framework for C++
+URL: https://github.com/your-org/cppSwitchboard
+Version: @PROJECT_VERSION@
+Requires: libnghttp2 >= 1.40.0, libssl >= 1.1.1
+Requires.private: yaml-cpp, libcrypto
+Libs: -L${libdir} -lcppSwitchboard
+Libs.private: -lboost_system -lpthread
+Cflags: -I${includedir} 

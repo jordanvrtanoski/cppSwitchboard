@@ -1,0 +1,21 @@
+@PACKAGE_INIT@
+
+# Find dependencies
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(NGHTTP2 REQUIRED libnghttp2)
+find_package(Boost REQUIRED COMPONENTS system)
+find_package(yaml-cpp QUIET)
+
+# If yaml-cpp is not found, try pkg-config
+if(NOT yaml-cpp_FOUND)
+    pkg_check_modules(YAML_CPP REQUIRED yaml-cpp)
+endif()
+
+# Find OpenSSL
+find_package(OpenSSL REQUIRED)
+
+# Include the targets file
+include("${CMAKE_CURRENT_LIST_DIR}/cppSwitchboardTargets.cmake")
+
+# Check that all required components are available
+check_required_components(cppSwitchboard) 

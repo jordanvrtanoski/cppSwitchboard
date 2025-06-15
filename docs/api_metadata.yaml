@@ -1,0 +1,16 @@
+---
+title: "cppSwitchboard API Reference"
+subtitle: "Complete API Documentation"
+author: "cppSwitchboard Development Team"
+date: \today
+version: "1.0.0"
+documentclass: article
+geometry: 
+  - margin=1in
+fontsize: 10pt
+toc: true
+toc-depth: 2
+numbersections: true
+highlight-style: pygments
+colorlinks: true
+---
